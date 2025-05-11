@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon" />
+  <title>Curriculum Vitae</title>
+</head>
+<body>
+    <!-- El hero-wrapper-mi es una variante de hero-wrapper explicado en el index. Es un contenedor de hero,
+    pero en este caso, en vez de tener la foto del mar, solo se conserva el cielo (sky). Se utiliza para 
+    mantener la consitencia de la web en cuanto a color, así como para mantener el degradado a blanco-->
+  <div class="hero-wrapper-sky">
+    <header id="main-header">
+      <div class="header-container">
+        <a href="index.html">
+          <img src="./img/Logo_solid_ndres.png" alt="logo andres bella" class="logo" />
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        
+        <nav class="menu-ppl">
+          <ul>
+            <li><a href="sobremi.html">Sobre Mi</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+        <a href="contacto.html">
+          <button class="btn-cnt"><b>Contacto</b></button>
+        </a>
+      </div>
+    </header>
+
+    <!--Utitlizo un wrapper específico para la página del cv. Esta primera parte se repetirá más adelante 
+    igual que ocurre con las demás páginas por tener un contenedor hero con fondo y otro con blanco -->
+    <div class="cv-wrapper">
+      <section class="cv-header">
+        <img src="./assets/icons/favicon.png" alt="icono Andrés" />
+        <h1>CURRICULUM VITAE</h1>
+        <p>Ingeniero y técnico superior en desarrollo de aplicaciones multiplataforma</p>
+      </section>
+
+      <section class="cv-perfil">
+        <h2>Perfil profesional</h2>
+        <p>
+          Profesional multidisciplinar con formación en ingeniería aeroespacial y desarrollo de software,
+          combinada con experiencia en docencia, programación y entornos técnicos internacionales. Apasionado
+          por la tecnología, la enseñanza y la creación de soluciones digitales eficientes y visualmente atractivas.
+          Capacidad demostrada para liderar proyectos, comunicar ideas con claridad y adaptarse a contextos técnicos diversos.
+          Busco seguir creciendo en el ámbito del desarrollo web y aplicaciones, integrando creatividad, lógica y utilidad.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Como en otras páginas, pasamos a la parte blanca. Aquí he colocado el 
+   currículum por las siguientes secciones -->
+  <main class="white-section">
+    <div class="cv-wrapper">
+      <div class="cv-grid">
+        <!--Sección de Experiencia -->
+        <section class="cv-block">
+          <h2>Experiencia laboral</h2>
+
+          <div class="cv-item">
+            <h3>Profesor</h3>
+            <p><strong>CIPFP Luís Suñer</strong> · Alzira · 2022 - Actualidad</p>
+            <ul>
+              <li>Profesor de Electrónica</li>
+              <li>Coordinador TIC</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <h3>Ingeniero en hidrodinámica</h3>
+            <p><strong>Equinor</strong> · Noruega · 2021 - 2022</p>
+            <ul>
+              <li>Análisis hidrodinámico para proyectos de offshore</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <h3>Guía Turístico</h3>
+            <p><strong>Norwegian</strong> · Noruega · 2020 - 2022</p>
+            <ul>
+              <li>Tours en inglés y castellano</li>
+              <li>Gestión de grupos</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--Sección de Formación -->
+        <section class="cv-block">
+          <h2>Formación</h2>
+
+          <div class="cv-item">
+            <h3>Grado en Ingeniería Aeroespacial</h3>
+            <p><strong>UPV</strong> · 2014 - 2018</p>
+          </div>
+
+          <div class="cv-item">
+            <h3>Técnico Sup. en DAM</h3>
+            <p><strong>UNIR</strong> · 2024 - Actualidad</p>
+          </div>
+
+          <div class="cv-item">
+            <h3>Curso de Python</h3>
+            <p><strong>UNIR</strong> · 2024 - 2025</p>
+          </div>
+        </section>
+
+        <!--Sección de Idiomas-->
+        <section class="cv-block">
+          <h2>Idiomas</h2>
+          <div class="cv-item">
+            <div class="lang-item"><span>Valenciano</span><div class="lang-bar nativo"></div></div>
+            <div class="lang-item"><span>Castellano</span><div class="lang-bar nativo"></div></div>
+            <div class="lang-item"><span>Inglés</span><div class="lang-bar c1"></div></div>
+            <div class="lang-item"><span>Noruego</span><div class="lang-bar b1"></div></div>
+            <div class="lang-item"><span>Alemán</span><div class="lang-bar a2"></div></div>
+          </div>
+        </section>
+
+        <!--Sección de Habilidades-->
+        <section class="cv-block">
+          <h2>Habilidades</h2>
+          <div class="cv-item">
+            <ul class="skills">
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>Node.js</li>
+              <li>Matlab</li>
+              <li>JSON</li>
+              <li>Linux</li>
+              <li>Diseño UX/UI</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Andrés Bella · Todos los derechos reservados</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

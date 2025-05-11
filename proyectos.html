@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    <title>Proyectos</title>
+</head>
+<body>
+    <!-- El hero-wrapper-mi es una variante de hero-wrapper explicado en el index. Es un contenedor de hero,
+    pero en este caso, en vez de tener la foto del mar, solo se conserva el cielo (sky). Se utiliza para 
+    mantener la consitencia de la web en cuanto a color, así como para mantener el degradado a blanco-->
+    <div class="hero-wrapper-sky">
+        <header id="main-header">
+          <div class="header-container">
+            <a href="index.html">
+              <img src="./img/Logo_solid_ndres.png" alt="logo andres bella" class="logo">
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
+            <nav class="menu-ppl">
+              <ul>
+                <li><a href="sobremi.html">Sobre Mi</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+              </ul>
+            </nav>
+            <a href="contacto.html">
+                <button class="btn-cnt"><b>Contacto</b></button>
+            </a>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-content">
+            <h1>EXPLORA MIS PROYECTOS</h1>
+            <p>Aquí encontrarás algunos de los proyectos que he desarrollado a lo largo de mis estudios, desde bases de datos hasta aplicaciones web.</p>
+          </div>
+        </section>
+        <!-- Icono animado tipo Scroll. Solo decorativo, no funcional, aunque en un futuro se podría
+         hacer funcional, por eso se le ha puesto "scroll-icon" como id -->
+        <div id="scroll-icon">
+            <div class="mouse">
+              <div class="dot"></div>
+            </div>
+            <p>scroll me</p>
+        </div>
+    </div>
+      
+    <main class="white-section">
+      <div class="cv-wrapper">
+        <section class="proyectos">
+            <h2>Mis proyectos</h2>
+            <div class="proyectos-grid">
+              <div class="proyecto-card">
+                <img src="./img/proyecto_biblio_ppl.png" alt="Proyecto 1">
+                <h3>Base de Datos</h3>
+                <p>Elaboración de una base de datos para biblioteca</p>
+              </div>
+              <div class="proyecto-card">
+                <img src="./img/webefe.png" alt="Proyecto 2">
+                <h3>Página web responsive</h3>
+                <p>Página web para una ilustradora realizada en colaborción con otros alumnos de la UNIR</p>
+              </div>
+              <div class="proyecto-card">
+                <img src="./img/scripting.jpeg" alt="Proyecto 2">
+                <h3>Script de automatización</h3>
+                <p>Script de sh para el control de los accesos al router personal</p>
+              </div>
+              <div class="proyecto-card">
+                <img src="./img/redes1.png" alt="Proyecto 2">
+                <h3>Gestion de redes</h3>
+                <p>Gestión de firewalls, accesso y mantenimiento de la red de un instituto.</p>
+              </div>
+            </div>
+        </section>
+      </div>
+    </main>
+    
+    <!-- Footer común a todas las páginas (copiado manualmente al no usar plantillas) -->
+    <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Andrés Bella · Todos los derechos reservados</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+    </footer>
+    <!-- Insertamos el js para la funcionalidad del header fijo con transparencia y sombra. -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

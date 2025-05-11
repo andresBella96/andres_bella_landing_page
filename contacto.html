@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- El hero-wrapper-mi es una variante de hero-wrapper explicado en el index. Es un contenedor de hero,
+    pero en este caso, en vez de tener la foto del mar, solo se conserva el cielo (sky). Se utiliza para 
+    mantener la consitencia de la web en cuanto a color, así como para mantener el degradado a blanco. Aún
+    así, por mantener el formulario entero en un mismo contenedor, no hay paso al blanco-->
+  <div class="hero-wrapper-sky">
+    <header id="main-header">
+      <div class="header-container">
+        <a href="index.html">
+          <img src="./img/Logo_solid_ndres.png" alt="logo andres bella" class="logo">
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        
+        <nav class="menu-ppl">
+          <ul>
+            <li><a href="sobremi.html">Sobre Mi</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+        <a href="contacto.html">
+          <button class="btn-cnt"><b>Contacto</b></button>
+        </a>
+      </div>
+    </header>
+
+    <!--Formulario. Aquí se podría separar el formulario por secciones con la etiqueta <fieldset> con 
+    titulos en el <legend>-->
+<section class="form-wrapper">
+  <h2 class="form-title">Contacto</h2>
+  <form action="https://formsubmit.co/belcandres@gmail.com" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_next" value="gracias.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="nombre" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="Apellidos" id="apellidos" required>
+
+      <label for="empresa">Empresa (opcional):</label>
+      <input type="text" name="Empresa" id="empresa">
+
+      <label for="email">E-mail:</label>
+      <input type="email" name="Email" id="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mensaje</legend>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="Mensaje" id="mensaje" rows="6" required></textarea>
+
+      <label for="archivo">Adjuntar archivos:</label>
+      <input type="file" name="Archivo" id="archivo">
+    </fieldset>
+
+    <button type="submit" class="btn-cnt">Enviar</button>
+  </form>
+</section>
+ 
+  
+  <!-- Footer común a todas las páginas (copiado manualmente al no usar plantillas) -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Andrés Bella · Todos los derechos reservados</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <!-- Insertamos el js para la funcionalidad del header fijo con transparencia y sombra. -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
